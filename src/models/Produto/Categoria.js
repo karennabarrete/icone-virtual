@@ -1,6 +1,5 @@
-const db = require("../database");
+const db = require("../../database");
 const { DataTypes } = require("sequelize");
-const Categoria = require("./Categoria.js");
 
 const Categoria = db.define(
     "Categoria", 
@@ -9,6 +8,7 @@ const Categoria = db.define(
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
+            id: true,
         },
         nome_categoria: {
             type: DataTypes.STRING,

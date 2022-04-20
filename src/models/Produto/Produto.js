@@ -1,6 +1,7 @@
-const db = require("../database");
+const db = require("../../database");
 const { DataTypes } = require("sequelize");
-const Produto = require("./Produto.js");
+const Categoria = require("./Categoria.js");
+const Fornecedor = require("./Fornecedor.js");
 
 const Produto = db.define(
     "Produto", 

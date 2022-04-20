@@ -1,6 +1,7 @@
-const db = require("../database");
+const db = require("../../database");
 const { DataTypes } = require("sequelize");
-const Favoritos = require("./Favoritos.js");
+const Produto = require("./Produto");
+const Cliente = require("../Cliente/Cliente");
 
 const Favoritos = db.define(
     "Favoritos", 

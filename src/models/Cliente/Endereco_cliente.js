@@ -1,6 +1,6 @@
-const db = require("../database");
+const db = require("../../database");
 const { DataTypes } = require("sequelize");
-const Endereco_cliente = require("./Endereco_cliente.js");
+const Cliente = require("./Cliente");
 
 const Endereco_cliente = db.define(
     "Endereco_cliente", 
